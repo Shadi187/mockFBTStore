@@ -1,0 +1,23 @@
+@property --angle{
+    syntax: '<angle>';
+    initial-value:0deg;
+    inherits: false;
+}
+
+.inputContainer{ 
+    width: 50%; 
+    height: 40px;
+    background-color: whitesmoke;
+    display:flex; 
+    justify-content: space-between;
+    border: 3px solid transparent;
+    --angle: 0deg;
+    border-image: linear-gradient(var(--angle) ,#1E58D5,#FD328B ) 1;
+    animation: 7s rotate linear infinite; 
+}
+
+@keyframes rotate{
+    to{ 
+        --angle: 360deg;
+    }
+}
