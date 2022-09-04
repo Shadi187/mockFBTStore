@@ -16,12 +16,12 @@ const Left = () => {
         
         { searchToggle === true ? 
         <Fragment>
-        <span onClick={handleClose} className={classes.languageg}>اغلاق</span>
-        <div className={classes.searchContainer}>
+        {/* <span onClick={handleClose} className={classes.languageg}>اغلاق</span> */}
+        <div onMouseOut={handleClose} className={classes.searchContainer}>
             <input className={classes.input}/>
              <BsSearch className={classes.logos}/>
              
-        </div></Fragment>  :  <span onClick={handleToggle} className={classes.languageg}>البحث</span>}
+        </div></Fragment>  :  <span onMouseMove={handleToggle} className={classes.languageg}>البحث</span>}
     </div>
   )
 }
