@@ -12,11 +12,11 @@
     justify-content: space-between;
     border: 3px solid transparent;
     --angle: 0deg;
-    border-image: linear-gradient(var(--angle) ,#1E58D5,#FD328B ) 1;
-    animation: 7s rotate linear infinite; 
+    border-image: linear-gradient(var(--angle) ,#1E58D5,#FD328B) 1;
+    animation: 7s breath infinite; 
 }
 
-@keyframes rotate{
+@keyframes breath{
     to{ 
         --angle: 360deg;
     }

@@ -1,3 +1,11 @@
+@property --angle{
+    syntax: '<angle>';
+    initial-value:0deg;
+    inherits: false;
+}
+
+
+
 .container{
     height: 60px;
     background-color: #151515;
@@ -45,9 +53,12 @@
     align-items: center;
     margin-left: 25px;
     padding: 5px;
-    border: 1px solid ;
+    border: 2.5px solid ;
     background-color: white;
-
+    --angle: 0deg;
+    border-image: linear-gradient(var(--angle) ,#1E58D5,#FD328B) 1;
+    color:transparent;
+    animation: 7s breath infinite; 
 }
 
 .input{
@@ -93,9 +104,27 @@ input:focus{
 
 .logos{
     margin-left: 2px;
-    color: #151515
+    color:black;
+    font-size: 20px;
 }
 
 .logos:hover{
     color:#FD328B
+}
+@keyframes breath{
+    to{ 
+        --angle: 360deg;
+    }
+}
+
+.languageg{
+    font-size: 14;
+    cursor: pointer;   
+    margin-left: 25px;
+}
+
+.languageg:hover{
+    background-image: linear-gradient(to right,#1E58D5,#FD328B );
+    background-clip: text;
+    color:transparent;
 }

@@ -4,8 +4,8 @@ import {BsCart} from 'react-icons/bs'
 const Right = () => {
   return (
     <div className={classes.right}>
-        <div className={classes.menuItem}>REGISTER</div>
-        <div className={classes.menuItem}>SIGN-IN</div>
+        <div className={classes.menuItem}>تسجيل</div>
+        <div className={classes.menuItem}>تسجيل الدخول</div>
         <div className={classes.menuItem}><BsCart /></div>
     </div>
   )
