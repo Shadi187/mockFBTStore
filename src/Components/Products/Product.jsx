@@ -81,6 +81,7 @@ const Product = ({product}) => {
         <Icon>
           <AiOutlineHeart/>
         </Icon>
+       
        </Info>
     </Container>
   )
